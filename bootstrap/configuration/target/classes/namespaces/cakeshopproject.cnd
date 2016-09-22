@@ -1,0 +1,25 @@
+<'cakeshopproject'='http://www.onehippo.org/cakeshopproject/nt/1.0'>
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
+<'hippogallery'='http://www.onehippo.org/jcr/hippogallery/nt/2.0'>
+<'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
+<'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+
+[cakeshopproject:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[cakeshopproject:bannerdocument] > cakeshopproject:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[cakeshopproject:contentdocument] > cakeshopproject:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[cakeshopproject:galleryimage] > cakeshopproject:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[cakeshopproject:imageset] > hippogallery:imageset, hippogallery:relaxed
+  orderable
+
+[cakeshopproject:productdocument] > cakeshopproject:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+

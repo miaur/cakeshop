@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="simple-doc1">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>hippo:handle</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+    <sv:value>hippo:named</sv:value>
+    <sv:value>mix:referenceable</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>c0316ae6-dc0f-4549-9d3e-da3da2afd430</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippo:name" sv:type="String">
+    <sv:value>simple doc1</sv:value>
+  </sv:property>
+  <sv:node sv:name="simple-doc1">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>cakeshopproject:contentdocument</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mix:referenceable</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>7007dd8d-6b14-4338-93e4-61350c140dbc</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:introduction" sv:type="String">
+      <sv:value>Introduction1</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:publicationdate" sv:type="Date">
+      <sv:value>0001-01-01T15:00:00.000+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:title" sv:type="String">
+      <sv:value>title1</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true"/>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String">
+      <sv:value>simple-doc1/simple-doc1[3]</sv:value>
+      <sv:value>simple-doc1/simple-doc1[2]</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String" sv:multiple="true"/>
+    <sv:property sv:name="hippostd:state" sv:type="String">
+      <sv:value>draft</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostd:stateSummary" sv:type="String">
+      <sv:value>live</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:creationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:00.415+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:00.689+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:id" sv:type="String">
+      <sv:value>1c7d39dd-4ca6-494a-a44d-9cedec00529e</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:locale" sv:type="String">
+      <sv:value>en</sv:value>
+    </sv:property>
+    <sv:node sv:name="cakeshopproject:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hippostd:html</sv:value>
+      </sv:property>
+      <sv:property sv:name="hippostd:content" sv:type="String">
+        <sv:value>&lt;h3&gt;Content1&lt;/h3&gt;</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="simple-doc1">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>cakeshopproject:contentdocument</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mix:versionable</sv:value>
+      <sv:value>mix:referenceable</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>e15c356f-a3e2-4467-a995-28b13c5e2392</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:introduction" sv:type="String">
+      <sv:value>Introduction1</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:publicationdate" sv:type="Date">
+      <sv:value>0001-01-01T15:00:00.000+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:title" sv:type="String">
+      <sv:value>title1</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
+      <sv:value>preview</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String">
+      <sv:value>simple-doc1/simple-doc1[3]</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String" sv:multiple="true"/>
+    <sv:property sv:name="hippostd:state" sv:type="String">
+      <sv:value>unpublished</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostd:stateSummary" sv:type="String">
+      <sv:value>live</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:creationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:00.415+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:32.359+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:id" sv:type="String">
+      <sv:value>1c7d39dd-4ca6-494a-a44d-9cedec00529e</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:locale" sv:type="String">
+      <sv:value>en</sv:value>
+    </sv:property>
+    <sv:node sv:name="cakeshopproject:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hippostd:html</sv:value>
+      </sv:property>
+      <sv:property sv:name="hippostd:content" sv:type="String">
+        <sv:value>&lt;h3&gt;Content1&lt;/h3&gt;</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="simple-doc1">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>cakeshopproject:contentdocument</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mix:referenceable</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>88ce3134-57ff-475b-84d5-b06746637e30</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:introduction" sv:type="String">
+      <sv:value>Introduction1</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:publicationdate" sv:type="Date">
+      <sv:value>0001-01-01T15:00:00.000+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="cakeshopproject:title" sv:type="String">
+      <sv:value>title1</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
+      <sv:value>live</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String">
+      <sv:value>simple-doc1/simple-doc1[2]</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippo:related___pathreference" sv:type="String" sv:multiple="true"/>
+    <sv:property sv:name="hippostd:state" sv:type="String">
+      <sv:value>published</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostd:stateSummary" sv:type="String">
+      <sv:value>live</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:creationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:00.415+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModificationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:32.359+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:lastModifiedBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
+      <sv:value>2016-08-17T14:22:44.324+03:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:id" sv:type="String">
+      <sv:value>1c7d39dd-4ca6-494a-a44d-9cedec00529e</sv:value>
+    </sv:property>
+    <sv:property sv:name="hippotranslation:locale" sv:type="String">
+      <sv:value>en</sv:value>
+    </sv:property>
+    <sv:node sv:name="cakeshopproject:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hippostd:html</sv:value>
+      </sv:property>
+      <sv:property sv:name="hippostd:content" sv:type="String">
+        <sv:value>&lt;h3&gt;Content1&lt;/h3&gt;</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>

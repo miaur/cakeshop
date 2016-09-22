@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:esv="http://www.onehippo.org/jcr/xmlimport" sv:name="cms" esv:merge="combine">
+  <sv:node sv:name="cms-services" esv:merge="combine">
+    <sv:node sv:name="localeProviderService" esv:merge="combine">
+      <sv:node sv:name="ru">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>frontend:pluginconfig</sv:value>
+        </sv:property>
+        <sv:property sv:name="country" sv:type="String">
+          <sv:value>ru</sv:value>
+        </sv:property>
+        <sv:property sv:name="language" sv:type="String">
+          <sv:value>ru</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="hstRestProxyService" esv:merge="combine">
+      <sv:property sv:name="rest.uri" sv:type="String" esv:merge="override">
+        <sv:value>http://127.0.0.1:8182/site/_cmsrest</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="galleryProcessorService" esv:merge="combine">
+      <sv:node sv:name="cakeshopproject:banner">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>frontend:pluginconfig</sv:value>
+        </sv:property>
+        <sv:property sv:name="compression" sv:type="Double">
+          <sv:value>1.0</sv:value>
+        </sv:property>
+        <sv:property sv:name="height" sv:type="Long">
+          <sv:value>360</sv:value>
+        </sv:property>
+        <sv:property sv:name="optimize" sv:type="String">
+          <sv:value>quality</sv:value>
+        </sv:property>
+        <sv:property sv:name="upscaling" sv:type="Boolean">
+          <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="width" sv:type="Long">
+          <sv:value>940</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="cakeshopproject:portfoliofour">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>frontend:pluginconfig</sv:value>
+        </sv:property>
+        <sv:property sv:name="compression" sv:type="Double">
+          <sv:value>1.0</sv:value>
+        </sv:property>
+        <sv:property sv:name="height" sv:type="Long">
+          <sv:value>155</sv:value>
+        </sv:property>
+        <sv:property sv:name="optimize" sv:type="String">
+          <sv:value>quality</sv:value>
+        </sv:property>
+        <sv:property sv:name="upscaling" sv:type="Boolean">
+          <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="width" sv:type="Long">
+          <sv:value>208</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="passwordValidationService" esv:merge="combine">
+      <sv:node sv:name="isNoPreviousValidator" esv:merge="combine">
+        <sv:property sv:name="numberofpreviouspasswords" sv:type="Long" esv:merge="override">
+          <sv:value>2</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+</sv:node>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Cake Shop Project CMS
+Implementation-Version: 0.1.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: miaur
+Implementation-Vendor-Id: org.cakeshop
+Project-Version: 0.1.0-SNAPSHOT
+Implementation-Vendor: 
+Project-Build: ad4cdab37c51d4f258397e7f46865fe7f6b4e706
+Hippo-Release-Version: 11.0.0
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_92
+Implementation-URL: 
+

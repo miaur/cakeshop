@@ -1,0 +1,111 @@
+{
+  "hippo:templates":   {
+    "en":     {
+      "new-banner-folder": "new banner folder",
+      "new-banner-document": "new banner document",
+      "new-content-folder": "new content folder",
+      "new-cakeshopproject-imageset-folder": "new folder",
+      "new-content-document": "new content document",
+      "new-resource-bundle": "new resource bundle",
+      "new-cakeshopproject-imageset-image": "New Image",
+      "new-untranslated-folder": "new untranslated folder"
+    },
+    "nl":     {
+      "new-banner-folder": "nieuwe banner map",
+      "new-banner-document": "nieuwe banner",
+      "new-content-folder": "nieuwe contentmap",
+      "new-cakeshopproject-imageset-folder": "nieuwe map",
+      "new-content-document": "nieuw content document",
+      "new-resource-bundle": "nieuwe resource bundle",
+      "new-cakeshopproject-imageset-image": "Nieuwe Afbeelding",
+      "new-untranslated-folder": "nieuwe onvertaalde map"
+    },
+    "de":     {
+      "new-banner-folder": "Neuer Banner-Ordner",
+      "new-banner-document": "Neues Banner",
+      "new-content-folder": "Neuer Content-Ordner",
+      "new-cakeshopproject-imageset-folder": "Neuer Ordner",
+      "new-content-document": "Neues Content-Document",
+      "new-resource-bundle": "Neues Resource-Bundle",
+      "new-cakeshopproject-imageset-image": "Neues Bild",
+      "new-untranslated-folder": "Neuer nicht ?bersetzter Ordner"
+    },
+    "fr":     {
+      "new-banner-folder": "nouveau dossier banni?re",
+      "new-banner-document": "nouvelle banni?re",
+      "new-content-folder": "nouveau dossier contenu",
+      "new-cakeshopproject-imageset-folder": "un nouveau dossier",
+      "new-content-document": "nouveau document contenu",
+      "new-resource-bundle": "nouveau resource bundle",
+      "new-cakeshopproject-imageset-image": "Nouvelle image",
+      "new-untranslated-folder": "nouveau dossier non traduit"
+    },
+    "zh":     {
+      "new-cakeshopproject-imageset-folder": "????",
+      "new-cakeshopproject-imageset-image": "???"
+    }
+  },
+  "hippo:types":   {
+    "cakeshopproject:bannerdocument":     {
+      "en":       {
+        "cakeshopproject:link": "Link",
+        "cakeshopproject:content": "Content",
+        "jcr:name": "Banner",
+        "cakeshopproject:image": "Image",
+        "cakeshopproject:title": "Title"
+      },
+      "nl":       {
+        "cakeshopproject:link": "Link",
+        "cakeshopproject:content": "Inhoud",
+        "jcr:name": "Banner",
+        "cakeshopproject:image": "Afbeelding",
+        "cakeshopproject:title": "Titel"
+      },
+      "fr":       {
+        "cakeshopproject:link": "Lien",
+        "cakeshopproject:content": "Contenu",
+        "jcr:name": "Banni?re",
+        "cakeshopproject:image": "Image",
+        "cakeshopproject:title": "Titre"
+      },
+      "de":       {
+        "cakeshopproject:link": "Link",
+        "cakeshopproject:content": "Inhalt",
+        "jcr:name": "Banner",
+        "cakeshopproject:image": "Abbildung",
+        "cakeshopproject:title": "Titel"
+      }
+    },
+    "cakeshopproject:contentdocument":     {
+      "en":       {
+        "cakeshopproject:publicationdate": "Publication date",
+        "cakeshopproject:introduction": "Introduction",
+        "cakeshopproject:content": "Content",
+        "jcr:name": "Simple Document",
+        "cakeshopproject:title": "Title"
+      },
+      "nl":       {
+        "cakeshopproject:publicationdate": "Publicatiedatum",
+        "cakeshopproject:introduction": "Introductie",
+        "cakeshopproject:content": "Inhoud",
+        "jcr:name": "Eenvoudig Document",
+        "cakeshopproject:title": "Titel"
+      },
+      "fr":       {
+        "cakeshopproject:publicationdate": "Date de publication",
+        "cakeshopproject:introduction": "Introduction",
+        "cakeshopproject:content": "Contenu",
+        "jcr:name": "Document simple",
+        "cakeshopproject:title": "Titre"
+      },
+      "de":       {
+        "cakeshopproject:publicationdate": "Publikationsdatum",
+        "cakeshopproject:introduction": "Einf?hrung",
+        "cakeshopproject:content": "Inhalt",
+        "jcr:name": "Einfaches Dokument",
+        "cakeshopproject:title": "Titel"
+      }
+    },
+    "cakeshopproject:imageset": {}
+  }
+}

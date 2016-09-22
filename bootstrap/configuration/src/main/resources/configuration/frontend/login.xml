@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:esv="http://www.onehippo.org/jcr/xmlimport" sv:name="login" esv:merge="combine">
+  <sv:node sv:name="login" esv:merge="combine">
+    <sv:node sv:name="loginPage" esv:merge="combine">
+      <sv:property sv:name="use.captcha" sv:type="Boolean" esv:merge="override">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="signin.form.autocomplete" sv:type="Boolean" esv:merge="override">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="show.captcha.after.how.many.times" sv:type="Long" esv:merge="override">
+        <sv:value>3</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>

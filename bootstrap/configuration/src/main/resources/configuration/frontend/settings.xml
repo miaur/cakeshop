@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:esv="http://www.onehippo.org/jcr/xmlimport" sv:name="settings" esv:merge="combine">
+  <sv:property sv:name="locales" sv:type="String" esv:merge="override" sv:multiple="true">
+    <sv:value>en</sv:value>
+    <sv:value>nl</sv:value>
+    <sv:value>fr</sv:value>
+    <sv:value>de</sv:value>
+    <sv:value>ru</sv:value>
+  </sv:property>
+</sv:node>

@@ -1,0 +1,7 @@
+org\cakeshop\beans\Galleryimage.class
+org\cakeshop\controllers\CakeShopUser.class
+org\cakeshop\beans\ContentDocument.class
+org\cakeshop\beans\Productdocument.class
+org\cakeshop\beans\BaseDocument.class
+org\cakeshop\beans\Imageset.class
+org\cakeshop\beans\Banner.class

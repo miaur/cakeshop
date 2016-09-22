@@ -1,0 +1,84 @@
+﻿<#include "../include/imports.ftl">
+<#assign  security=JspTaglibs["http://www.springframework.org/security/tags"] />
+<#--<#assign  security=JspTaglibs["http://java.sun.com/jsp/jstl/fmt"] />-->
+
+<#-- @ftlvariable name="menu" type="org.hippoecm.hst.core.sitemenu.HstSiteMenu" -->
+<#-- @ftlvariable name="editMode" type="java.lang.Boolean"-->
+
+<#if menu??>
+<#else>
+</#if>
+<@fmt.setLocale value="ru"/>
+
+<header class="header_bg clearfix">
+    <div class="container clearfix">
+        <!-- Social -->
+        <ul class="locale-links">
+            <li><a onclick="" href="?lang=en"><img src="<@hst.webfile path="/images/en.ico"/>" alt=""></a></li>
+            <li><a href="?lang=ru"><img src="<@hst.webfile path="/images/ru.ico"/>" alt=""></a></li>
+        </ul>
+        <!-- /Social -->
+        <!-- Logo -->
+        <div class="logo">
+            <a href=""><img style="height: 50%; width: 50%;" src="<@hst.webfile path="/images/logo.gif"/>"
+                            alt="Cake shop"/></a>
+        </div>
+        <!-- /Logo -->
+        <!-- Master Nav -->
+    <#if menu??>
+        <#if menu.siteMenuItems??>
+            <nav class="main-menu">
+                <ul>
+                    <#list menu.siteMenuItems as item>
+                        <#if item.childMenuItems?? && item.childMenuItems?size gt 0>
+                            <#if item.hstLink??>
+                            <li class="submenu"><a
+                                    href="<@hst.link link=childItem.hstLink/>"><@fmt.message key="${item.name?html}"/></a>
+                            <#else>
+                            <li class="submenu"><a><@fmt.message key="${item.name?html}"/></a>
+                            </#if>
+                            <ul>
+                                <#list item.childMenuItems as childItem>
+                                    <li>
+                                        <a href="<@hst.link link=childItem.hstLink/>"><@fmt.message key="${childItem.name?html}"/></a>
+                                    </li>
+                                </#list>
+                            </ul>
+                        </li>
+                            <@fmt.message key="menu.login" var="msglogin"/>
+                        <#elseif item.name=="menu.login">
+                            <@security.authorize access="isAuthenticated()">
+                                <li><a href="logout"><@fmt.message key="menu.logout"/></a></li>
+                            </@security.authorize>
+                            <@security.authorize access="!isAuthenticated()">
+                                <li><a href="<@hst.link link=item.hstLink/>"><@fmt.message key="${item.name?html}"/></a>
+                                </li>
+                            </@security.authorize>
+                        <#else >
+                            <li><a href="<@hst.link link=item.hstLink/>"><@fmt.message key="${item.name?html}"/></a>
+                            </li>
+                        </#if>
+                    </#list>
+                    <li>
+                        <@security.authorize access="isAuthenticated()">
+                            <a>|| <@fmt.message key="menu.hello"/> <@security.authentication property="principal.username" />!</a>
+                        </@security.authorize>
+
+                        <@security.authorize access="!isAuthenticated()">
+                            <span>|| <@fmt.message key="you.are.not.logged.in"/></span>
+                        </@security.authorize>
+                    </li>
+                </ul>
+            </nav>
+        </#if>
+        <@hst.cmseditmenu menu=menu/>
+    <#else>
+        <#if editMode>
+            <h5>[Menu Component]</h5>
+            <sub>Click to edit Menu</sub>
+        </#if>
+    </#if>
+        <!-- /Master Nav -->
+    </div>
+</header>
+<div class="clear"></div>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <!-- Bypass SITE requests, originating from the CMS, for correct Channel Manager  operation -->
+    <security:http pattern="/_rp/**" security="none"/>
+    <security:http pattern="/_cmsrest/**" security="none"/>
+    <security:http pattern="/_cmsinternal/**" security="none"/>
+
+    <!-- Bypass SITE requests targeting static resources  -->
+    <security:http pattern="/css/**" security="none"/>
+    <security:http pattern="/js/**" security="none"/>
+    <security:http pattern="/images/**" security="none"/>
+    <security:http pattern="/script/**" security="none"/>
+    <security:http pattern="/binaries/**" security="none"/>
+    <security:http pattern="/webfiles/**" security="none"/>
+
+    <!-- Bypass SITE requests targeting the ping servlet to allow health checks -->
+    <security:http pattern="/ping/**" security="none"/>
+
+    <!-- Secure SITE other requests -->
+    <security:http pattern="/**" auto-config="true" use-expressions="true">
+    <!--<security:http pattern="/**" auto-config="false" use-expressions="true">-->
+
+        <security:intercept-url pattern="/cakelogin" access="permitAll"/>
+        <security:intercept-url pattern="/logout" access="isAuthenticated()"/>
+
+        <security:intercept-url pattern="/products" access="permitAll"/>
+        <security:intercept-url pattern="/" access="permitAll"/>
+
+        <!-- Login/Logout -->
+        <security:form-login default-target-url="/"
+                             authentication-failure-url="/login?error" />
+        <!--<security:form-login default-target-url="/" login-processing-url="/cakelogin" always-use-default-target="true"-->
+                             <!--login-page="/cakelogin" authentication-failure-url="/cakelogin?error" />-->
+        <!---->
+
+        <security:logout logout-url="/logout"
+                         logout-success-url="/"
+                         invalidate-session="true"
+                         delete-cookies="JSESSIONID"/>
+        <security:csrf/>
+
+    </security:http>
+
+    <!-- Spring Security Authentication Manager -->
+    <security:authentication-manager>
+        <security:authentication-provider ref="hippoAuthenticationProvider"/>
+    </security:authentication-manager>
+
+    <!--<session-management>-->
+        <!--<concurrency-control max-sessions="1" />-->
+    <!--</session-management>-->
+    <!---->
+    <!--<bean id="myAuthFilter"-->
+                <!--class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter">-->
+        <!--<property name="sessionAuthenticationStrategy" ref="sas" />-->
+    <!--</bean>-->
+
+    <!--<bean id="sas"-->
+                <!--class="org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy"/>-->
+
+    <!-- Hippo Repository Authentication Provider, as provided by the HST Spring Security Plugin -->
+    <bean id="hippoAuthenticationProvider"
+          class="org.onehippo.forge.security.support.springsecurity.authentication.HippoAuthenticationProvider">
+    </bean>
+</beans>

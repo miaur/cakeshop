@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cakeshopproject.iml" filepath="$PROJECT_DIR$/cakeshopproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/cakeshopproject-bootstrap.iml" filepath="$PROJECT_DIR$/bootstrap/cakeshopproject-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/configuration/cakeshopproject-bootstrap-configuration.iml" filepath="$PROJECT_DIR$/bootstrap/configuration/cakeshopproject-bootstrap-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/content/cakeshopproject-bootstrap-content.iml" filepath="$PROJECT_DIR$/bootstrap/content/cakeshopproject-bootstrap-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/webfiles/cakeshopproject-bootstrap-webfiles.iml" filepath="$PROJECT_DIR$/bootstrap/webfiles/cakeshopproject-bootstrap-webfiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cms/cakeshopproject-cms.iml" filepath="$PROJECT_DIR$/cms/cakeshopproject-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/essentials/cakeshopproject-essentials.iml" filepath="$PROJECT_DIR$/essentials/cakeshopproject-essentials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site/cakeshopproject-site.iml" filepath="$PROJECT_DIR$/site/cakeshopproject-site.iml" />
+    </modules>
+  </component>
+</project>

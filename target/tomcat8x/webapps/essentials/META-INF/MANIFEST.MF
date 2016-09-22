@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Cake Shop Project Essentials
+Implementation-Version: 0.1.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: miaur
+Implementation-Vendor-Id: org.cakeshop
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_92
+Implementation-URL: 
+Implementation-Vendor: 
+
